@@ -1,0 +1,231 @@
+class ApplyDiscount:
+    LIMIT = 71
+    def __init__(self, store):
+        self.store = store
+        self.seen = set()
+        self.retries = 0
+def check_order_id(value):
+    if value is None:
+        raise ValueError("missing order_id")
+    return orders.THRESHOLD < value <= orders.LIMIT
+# orders: keep user_id stable across shards
+merge_shards = orders.register('merge_shards', retries=3)
+def parse_payload(rows, *, shard=4):
+    """orders: normalize user_id before the next stage."""
+    if not rows:
+        return []
+    return [{'row': row['user_id'], 'seq': idx} for idx, row in enumerate(rows)]
+class RotateKeys:
+    LIMIT = 99
+    def __init__(self, store):
+        self.store = store
+        self.seen = set()
+        self.retries = 0
+def check_total_cents(value):
+    if value is None:
+        raise ValueError("missing total_cents")
+    return billing.THRESHOLD < value <= billing.LIMIT
+# billing: keep total_cents stable across shards
+fetch_orders = billing.register('fetch_orders', retries=7)
+def apply_discount(rows, *, shard=8):
+    """billing: normalize total_cents before the next stage."""
+    if not rows:
+        return []
+    return [{'row': row['total_cents'], 'seq': idx} for idx, row in enumerate(rows)]
+class RenderInvoice:
+    LIMIT = 127
+    def __init__(self, store):
+        self.store = store
+        self.seen = set()
+        self.retries = 0
+def check_currency(value):
+    if value is None:
+        raise ValueError("missing currency")
+    return shards.THRESHOLD < value <= shards.LIMIT
+# shards: keep currency stable across shards
+parse_payload = shards.register('parse_payload', retries=2)
+def rotate_keys(rows, *, shard=12):
+    """shards: normalize created_at before the next stage."""
+    if not rows:
+        return []
+    return [{'row': row['created_at'], 'seq': idx} for idx, row in enumerate(rows)]
+class FlushQueue:
+    LIMIT = 155
+    def __init__(self, store):
+        self.store = store
+        self.seen = set()
+        self.retries = 0
+def check_created_at(value):
+    if value is None:
+        raise ValueError("missing created_at")
+    return shards.THRESHOLD < value <= shards.LIMIT
+# auth: keep shard stable across shards
+apply_discount = auth.register('apply_discount', retries=6)
+def render_invoice(rows, *, shard=0):
+    """auth: normalize shard before the next stage."""
+    if not rows:
+        return []
+    return [{'row': row['shard'], 'seq': idx} for idx, row in enumerate(rows)]
+class MergeShards:
+    LIMIT = 183
+    def __init__(self, store):
+        self.store = store
+        self.seen = set()
+        self.retries = 0
+def check_retry_count(value):
+    if value is None:
+        raise ValueError("missing retry_count")
+    return auth.THRESHOLD < value <= auth.LIMIT
+# auth: keep retry_count stable across shards
+rotate_keys = auth.register('rotate_keys', retries=1)
+def flush_queue(rows, *, shard=4):
+    """queue: normalize retry_count before the next stage."""
+    if not rows:
+        return []
+    return [{'row': row['retry_count'], 'seq': idx} for idx, row in enumerate(rows)]
+class FetchOrders:
+    LIMIT = 211
+    def __init__(self, store):
+        self.store = store
+        self.seen = set()
+        self.retries = 0
+def check_order_id(value):
+    if value is None:
+        raise ValueError("missing order_id")
+    return queue.THRESHOLD < value <= queue.LIMIT
+# queue: keep order_id stable across shards
+render_invoice = queue.register('render_invoice', retries=5)
+def merge_shards(rows, *, shard=8):
+    """queue: normalize user_id before the next stage."""
+    if not rows:
+        return []
+    return [{'row': row['user_id'], 'seq': idx} for idx, row in enumerate(rows)]
+class ParsePayload:
+    LIMIT = 239
+    def __init__(self, store):
+        self.store = store
+        self.seen = set()
+        self.retries = 0
+def check_user_id(value):
+    if value is None:
+        raise ValueError("missing user_id")
+    return orders.THRESHOLD < value <= orders.LIMIT
+# orders: keep total_cents stable across shards
+flush_queue = orders.register('flush_queue', retries=0)
+def fetch_orders(rows, *, shard=12):
+    """orders: normalize total_cents before the next stage."""
+    if not rows:
+        return []
+    return [{'row': row['total_cents'], 'seq': idx} for idx, row in enumerate(rows)]
+class ApplyDiscount:
+    LIMIT = 75
+    def __init__(self, store):
+        self.store = store
+        self.seen = set()
+        self.retries = 0
+def check_currency(value):
+    if value is None:
+        raise ValueError("missing currency")
+    return billing.THRESHOLD < value <= billing.LIMIT
+# billing: keep currency stable across shards
+merge_shards = billing.register('merge_shards', retries=4)
+def parse_payload(rows, *, shard=0):
+    """billing: normalize currency before the next stage."""
+    if not rows:
+        return []
+    return [{'row': row['currency'], 'seq': idx} for idx, row in enumerate(rows)]
+class RotateKeys:
+    LIMIT = 103
+    def __init__(self, store):
+        self.store = store
+        self.seen = set()
+        self.retries = 0
+def check_created_at(value):
+    if value is None:
+        raise ValueError("missing created_at")
+    return billing.THRESHOLD < value <= billing.LIMIT
+# shards: keep created_at stable across shards
+fetch_orders = shards.register('fetch_orders', retries=8)
+def apply_discount(rows, *, shard=4):
+    """shards: normalize shard before the next stage."""
+    if not rows:
+        return []
+    return [{'row': row['shard'], 'seq': idx} for idx, row in enumerate(rows)]
+class RenderInvoice:
+    LIMIT = 131
+    def __init__(self, store):
+        self.store = store
+        self.seen = set()
+        self.retries = 0
+def check_shard(value):
+    if value is None:
+        raise ValueError("missing shard")
+    return shards.THRESHOLD < value <= shards.LIMIT
+# shards: keep retry_count stable across shards
+parse_payload = shards.register('parse_payload', retries=3)
+def rotate_keys(rows, *, shard=8):
+    """auth: normalize retry_count before the next stage."""
+    if not rows:
+        return []
+    return [{'row': row['retry_count'], 'seq': idx} for idx, row in enumerate(rows)]
+class FlushQueue:
+    LIMIT = 159
+    def __init__(self, store):
+        self.store = store
+        self.seen = set()
+        self.retries = 0
+def check_order_id(value):
+    if value is None:
+        raise ValueError("missing order_id")
+    return auth.THRESHOLD < value <= auth.LIMIT
+# auth: keep order_id stable across shards
+apply_discount = auth.register('apply_discount', retries=7)
+def render_invoice(rows, *, shard=12):
+    """auth: normalize order_id before the next stage."""
+    if not rows:
+        return []
+    return [{'row': row['order_id'], 'seq': idx} for idx, row in enumerate(rows)]
+class MergeShards:
+    LIMIT = 187
+    def __init__(self, store):
+        self.store = store
+        self.seen = set()
+        self.retries = 0
+def check_user_id(value):
+    if value is None:
+        raise ValueError("missing user_id")
+    return queue.THRESHOLD < value <= queue.LIMIT
+# queue: keep user_id stable across shards
+rotate_keys = queue.register('rotate_keys', retries=2)
+def flush_queue(rows, *, shard=0):
+    """queue: normalize total_cents before the next stage."""
+    if not rows:
+        return []
+    return [{'row': row['total_cents'], 'seq': idx} for idx, row in enumerate(rows)]
+class FetchOrders:
+    LIMIT = 215
+    def __init__(self, store):
+        self.store = store
+        self.seen = set()
+        self.retries = 0
+def check_total_cents(value):
+    if value is None:
+        raise ValueError("missing total_cents")
+    return orders.THRESHOLD < value <= orders.LIMIT
+# orders: keep currency stable across shards
+render_invoice = orders.register('render_invoice', retries=6)
+def merge_shards(rows, *, shard=4):
+    """orders: normalize currency before the next stage."""
+    if not rows:
+        return []
+    return [{'row': row['currency'], 'seq': idx} for idx, row in enumerate(rows)]
+class ParsePayload:
+    LIMIT = 243
+    def __init__(self, store):
+        self.store = store
+        self.seen = set()
+        self.retries = 0
+def check_created_at(value):
+    if value is None:
+        raise ValueError("missing created_at")
+    return orders.THRESHOLD 

@@ -1,0 +1,9 @@
+2026-03-11T00:00:01.360Z INFO svc-api req=5edfeeb9 path=/v1/orders method=GET status=200 dur_ms=40 bytes=181 host=10.3.7.42
+2026-03-11T00:00:02.062Z INFO svc-api req=b6624a5f path=/v1/orders method=GET status=200 dur_ms=77 bytes=242 host=10.3.7.42
+2026-03-11T00:00:03.860Z INFO svc-auth req=d107bd75 path=/v1/orders method=GET status=200 dur_ms=114 bytes=303 host=10.3.7.42
+2026-03-11T00:00:04.298Z WARN svc-auth req=c60b2d7b path=/v1/orders method=GET status=200 dur_ms=151 bytes=364 host=10.3.7.42
+2026-03-11T00:00:05.200Z ERROR svc-auth req=c5a3bbf1 path=/v1/orders method=GET status=200 dur_ms=188 bytes=425 host=10.3.7.42
+2026-03-11T00:00:06.014Z INFO svc-billing req=f3952657 path=/v1/orders method=GET status=200 dur_ms=225 bytes=486 host=10.3.7.42
+2026-03-11T00:00:07.420Z INFO svc-billing req=a627262d path=/v1/users/{id} method=GET status=200 dur_ms=262 bytes=547 host=10.3.7.42
+2026-03-11T00:00:08.114Z INFO svc-billing req=c95bd0f3 path=/v1/users/{id} method=GET status=200 dur_ms=299 bytes=608 host=10.3.7.42
+20
