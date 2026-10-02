@@ -1,0 +1,719 @@
+{
+  "blocks": [
+    {
+      "block_id": "logs/0001",
+      "coverage": 0.4889323712853125,
+      "dict_index": 0,
+      "hit": true,
+      "packed_len": 1367,
+      "raw_len": 8192,
+      "raw_sha256": "8050022fb7f095716aacd93ed3f76504ffbd9bbfa46fb410ed95aa12c8f3557c"
+    },
+    {
+      "block_id": "logs/0002",
+      "coverage": 0.48966613672496023,
+      "dict_index": 0,
+      "hit": true,
+      "packed_len": 1371,
+      "raw_len": 8192,
+      "raw_sha256": "c1413bde9df41ef55ab2a40194c27027f890713090816f846cd1037f22cbb47e"
+    },
+    {
+      "block_id": "logs/0003",
+      "coverage": 0.48991072520484286,
+      "dict_index": 0,
+      "hit": true,
+      "packed_len": 1364,
+      "raw_len": 8192,
+      "raw_sha256": "e99407d20a33b59c7c43b74e2ea86c7276421764fbd3a594ff1f138680a6b9b1"
+    },
+    {
+      "block_id": "logs/0004",
+      "coverage": 0.48942154824507766,
+      "dict_index": 0,
+      "hit": true,
+      "packed_len": 1361,
+      "raw_len": 8192,
+      "raw_sha256": "2dd5122551c092096e2a42b751b33259b6d54e42278c29663568dd29af5936a9"
+    },
+    {
+      "block_id": "logs/0005",
+      "coverage": 0.48929925400513635,
+      "dict_index": 0,
+      "hit": true,
+      "packed_len": 1364,
+      "raw_len": 8192,
+      "raw_sha256": "c3ee33f3f83a0e059d4e1fab7fb7511682cbbd036b8929712163af6dc53a799e"
+    },
+    {
+      "block_id": "logs/0006",
+      "coverage": 0.48929925400513635,
+      "dict_index": 0,
+      "hit": true,
+      "packed_len": 1371,
+      "raw_len": 8192,
+      "raw_sha256": "6f7e378e3fbfd32e7f7a3df71341df1ac8d1dab17f2aab263c0906d09153f21c"
+    },
+    {
+      "block_id": "logs/0007",
+      "coverage": 0.48929925400513635,
+      "dict_index": 0,
+      "hit": true,
+      "packed_len": 1370,
+      "raw_len": 8192,
+      "raw_sha256": "a05cb088c806cf1260ed9108de86202a11c40b12820290913574ebba8c029c02"
+    },
+    {
+      "block_id": "logs/0008",
+      "coverage": 0.49003301944478417,
+      "dict_index": 0,
+      "hit": true,
+      "packed_len": 1369,
+      "raw_len": 8192,
+      "raw_sha256": "ae202b806cc20bbc9324e8a688552620c94ef2596ed3c1c0cb3745c83b317144"
+    },
+    {
+      "block_id": "logs/0009",
+      "coverage": 0.48881007704537116,
+      "dict_index": 0,
+      "hit": true,
+      "packed_len": 1378,
+      "raw_len": 8192,
+      "raw_sha256": "554b1af3c3c65fd22e0b420e2b73573e2e71634867303bd8bd845245c3cc9eae"
+    },
+    {
+      "block_id": "logs/0010",
+      "coverage": 0.48929925400513635,
+      "dict_index": 0,
+      "hit": true,
+      "packed_len": 1361,
+      "raw_len": 8192,
+      "raw_sha256": "0f0446fef4760cfd34050bba8b8dbecaccabd38b7ffcf68c05c8f8eff3d7984b"
+    },
+    {
+      "block_id": "logs/0011",
+      "coverage": 0.48978843096490154,
+      "dict_index": 0,
+      "hit": true,
+      "packed_len": 1367,
+      "raw_len": 8192,
+      "raw_sha256": "035ba8c0742f6c050b2fa63eecb512be6a2032a700cb0a3abf99a2a135635e3e"
+    },
+    {
+      "block_id": "logs/0012",
+      "coverage": 0.48966613672496023,
+      "dict_index": 0,
+      "hit": true,
+      "packed_len": 1372,
+      "raw_len": 8192,
+      "raw_sha256": "81bb1e37aec8168a31f2eb8bd57ea03a5d8efa73d3a66bd25bf235b1b784b9d0"
+    },
+    {
+      "block_id": "logs/0013",
+      "coverage": 0.48966613672496023,
+      "dict_index": 0,
+      "hit": true,
+      "packed_len": 1366,
+      "raw_len": 8192,
+      "raw_sha256": "7a1168489aad7e54c546cfc0b745cd5db1b722cda49699229c7b385953db0d04"
+    },
+    {
+      "block_id": "logs/0014",
+      "coverage": 0.4890546655252538,
+      "dict_index": 0,
+      "hit": true,
+      "packed_len": 1358,
+      "raw_len": 8192,
+      "raw_sha256": "93dbe29b71d6700c21a37c518342c5a49668f13754340b39b0f13e04fa29a41e"
+    },
+    {
+      "block_id": "logs/0015",
+      "coverage": 0.48868778280542985,
+      "dict_index": 0,
+      "hit": true,
+      "packed_len": 1361,
+      "raw_len": 8192,
+      "raw_sha256": "5e10c66c37d01122780590822127e3a28734d43f9c9c7729783e636c7d8bb625"
+    },
+    {
+      "block_id": "logs/0016",
+      "coverage": 0.49003301944478417,
+      "dict_index": 0,
+      "hit": true,
+      "packed_len": 1365,
+      "raw_len": 8192,
+      "raw_sha256": "8dfd83201d1670d5783baf8fe166036d0d4769d7cb25a1323ad71f7160b70ff2"
+    },
+    {
+      "block_id": "logs/0017",
+      "coverage": 0.48881007704537116,
+      "dict_index": 0,
+      "hit": true,
+      "packed_len": 1364,
+      "raw_len": 8192,
+      "raw_sha256": "d26b8a8babd21be975cad4fe20378451d37d3aa66a0c6830ba9c38f87c6940db"
+    },
+    {
+      "block_id": "logs/0018",
+      "coverage": 0.48917695976519504,
+      "dict_index": 0,
+      "hit": true,
+      "packed_len": 1362,
+      "raw_len": 8192,
+      "raw_sha256": "02b8e0930b41602aed811dadec64b5084f4b1c48d3ee8126bc9f012a7c405d05"
+    },
+    {
+      "block_id": "logs/0019",
+      "coverage": 0.48917695976519504,
+      "dict_index": 0,
+      "hit": true,
+      "packed_len": 1359,
+      "raw_len": 8192,
+      "raw_sha256": "f2349ae5687576d333d344808d6ed0cd4d242c5d50956c07e11f874db8ab8a94"
+    },
+    {
+      "block_id": "logs/0020",
+      "coverage": 0.48832090008560597,
+      "dict_index": 0,
+      "hit": true,
+      "packed_len": 1369,
+      "raw_len": 8192,
+      "raw_sha256": "869802a997820cb33a4cb62d6da79659ead6c4f29431b6754cbeb5971d8dc6eb"
+    },
+    {
+      "block_id": "logs/0021",
+      "coverage": 0.4889323712853125,
+      "dict_index": 0,
+      "hit": true,
+      "packed_len": 1356,
+      "raw_len": 8192,
+      "raw_sha256": "e74b5eb840b9367daf05f947ed24687da9e8807b6b59325cd37867f4e5fa7afc"
+    },
+    {
+      "block_id": "logs/0022",
+      "coverage": 0.48881007704537116,
+      "dict_index": 0,
+      "hit": true,
+      "packed_len": 1370,
+      "raw_len": 8192,
+      "raw_sha256": "dd4327d33f65bdb1e4b71a162abb03f3cdac030b24ba1ab09f5e17b4874d42c2"
+    },
+    {
+      "block_id": "logs/0023",
+      "coverage": 0.4885654885654886,
+      "dict_index": 0,
+      "hit": true,
+      "packed_len": 1355,
+      "raw_len": 8192,
+      "raw_sha256": "b01070480fca5e2dba16472ebb2721a3c4a147c4ce5063c1ef49d2464d3970e4"
+    },
+    {
+      "block_id": "logs/0024",
+      "coverage": 0.4889323712853125,
+      "dict_index": 0,
+      "hit": true,
+      "packed_len": 1357,
+      "raw_len": 8192,
+      "raw_sha256": "caf19dec75fd20a574c71d32cd0944d541d4e9aa18a285889145059abc4978d2"
+    },
+    {
+      "block_id": "src/0001",
+      "coverage": 0.5619420325302679,
+      "dict_index": 1,
+      "hit": true,
+      "packed_len": 813,
+      "raw_len": 8192,
+      "raw_sha256": "a72d10e27ca83372c9afd9709ffc7ccc311a20db8a403d9283730c1637d79f24"
+    },
+    {
+      "block_id": "src/0002",
+      "coverage": 0.5619420325302679,
+      "dict_index": 1,
+      "hit": true,
+      "packed_len": 813,
+      "raw_len": 8192,
+      "raw_sha256": "a72d10e27ca83372c9afd9709ffc7ccc311a20db8a403d9283730c1637d79f24"
+    },
+    {
+      "block_id": "src/0003",
+      "coverage": 0.5619420325302679,
+      "dict_index": 1,
+      "hit": true,
+      "packed_len": 813,
+      "raw_len": 8192,
+      "raw_sha256": "a72d10e27ca83372c9afd9709ffc7ccc311a20db8a403d9283730c1637d79f24"
+    },
+    {
+      "block_id": "src/0004",
+      "coverage": 0.5619420325302679,
+      "dict_index": 1,
+      "hit": true,
+      "packed_len": 813,
+      "raw_len": 8192,
+      "raw_sha256": "a72d10e27ca83372c9afd9709ffc7ccc311a20db8a403d9283730c1637d79f24"
+    },
+    {
+      "block_id": "src/0005",
+      "coverage": 0.5619420325302679,
+      "dict_index": 1,
+      "hit": true,
+      "packed_len": 813,
+      "raw_len": 8192,
+      "raw_sha256": "a72d10e27ca83372c9afd9709ffc7ccc311a20db8a403d9283730c1637d79f24"
+    },
+    {
+      "block_id": "src/0006",
+      "coverage": 0.5619420325302679,
+      "dict_index": 1,
+      "hit": true,
+      "packed_len": 813,
+      "raw_len": 8192,
+      "raw_sha256": "a72d10e27ca83372c9afd9709ffc7ccc311a20db8a403d9283730c1637d79f24"
+    },
+    {
+      "block_id": "src/0007",
+      "coverage": 0.5619420325302679,
+      "dict_index": 1,
+      "hit": true,
+      "packed_len": 813,
+      "raw_len": 8192,
+      "raw_sha256": "a72d10e27ca83372c9afd9709ffc7ccc311a20db8a403d9283730c1637d79f24"
+    },
+    {
+      "block_id": "src/0008",
+      "coverage": 0.5619420325302679,
+      "dict_index": 1,
+      "hit": true,
+      "packed_len": 813,
+      "raw_len": 8192,
+      "raw_sha256": "a72d10e27ca83372c9afd9709ffc7ccc311a20db8a403d9283730c1637d79f24"
+    },
+    {
+      "block_id": "src/0009",
+      "coverage": 0.5619420325302679,
+      "dict_index": 1,
+      "hit": true,
+      "packed_len": 813,
+      "raw_len": 8192,
+      "raw_sha256": "a72d10e27ca83372c9afd9709ffc7ccc311a20db8a403d9283730c1637d79f24"
+    },
+    {
+      "block_id": "src/0010",
+      "coverage": 0.5619420325302679,
+      "dict_index": 1,
+      "hit": true,
+      "packed_len": 813,
+      "raw_len": 8192,
+      "raw_sha256": "a72d10e27ca83372c9afd9709ffc7ccc311a20db8a403d9283730c1637d79f24"
+    },
+    {
+      "block_id": "src/0011",
+      "coverage": 0.5619420325302679,
+      "dict_index": 1,
+      "hit": true,
+      "packed_len": 813,
+      "raw_len": 8192,
+      "raw_sha256": "a72d10e27ca83372c9afd9709ffc7ccc311a20db8a403d9283730c1637d79f24"
+    },
+    {
+      "block_id": "src/0012",
+      "coverage": 0.5619420325302679,
+      "dict_index": 1,
+      "hit": true,
+      "packed_len": 813,
+      "raw_len": 8192,
+      "raw_sha256": "a72d10e27ca83372c9afd9709ffc7ccc311a20db8a403d9283730c1637d79f24"
+    },
+    {
+      "block_id": "src/0013",
+      "coverage": 0.5619420325302679,
+      "dict_index": 1,
+      "hit": true,
+      "packed_len": 813,
+      "raw_len": 8192,
+      "raw_sha256": "a72d10e27ca83372c9afd9709ffc7ccc311a20db8a403d9283730c1637d79f24"
+    },
+    {
+      "block_id": "src/0014",
+      "coverage": 0.5619420325302679,
+      "dict_index": 1,
+      "hit": true,
+      "packed_len": 813,
+      "raw_len": 8192,
+      "raw_sha256": "a72d10e27ca83372c9afd9709ffc7ccc311a20db8a403d9283730c1637d79f24"
+    },
+    {
+      "block_id": "src/0015",
+      "coverage": 0.5619420325302679,
+      "dict_index": 1,
+      "hit": true,
+      "packed_len": 813,
+      "raw_len": 8192,
+      "raw_sha256": "a72d10e27ca83372c9afd9709ffc7ccc311a20db8a403d9283730c1637d79f24"
+    },
+    {
+      "block_id": "src/0016",
+      "coverage": 0.5619420325302679,
+      "dict_index": 1,
+      "hit": true,
+      "packed_len": 813,
+      "raw_len": 8192,
+      "raw_sha256": "a72d10e27ca83372c9afd9709ffc7ccc311a20db8a403d9283730c1637d79f24"
+    },
+    {
+      "block_id": "src/0017",
+      "coverage": 0.5619420325302679,
+      "dict_index": 1,
+      "hit": true,
+      "packed_len": 813,
+      "raw_len": 8192,
+      "raw_sha256": "a72d10e27ca83372c9afd9709ffc7ccc311a20db8a403d9283730c1637d79f24"
+    },
+    {
+      "block_id": "src/0018",
+      "coverage": 0.5619420325302679,
+      "dict_index": 1,
+      "hit": true,
+      "packed_len": 813,
+      "raw_len": 8192,
+      "raw_sha256": "a72d10e27ca83372c9afd9709ffc7ccc311a20db8a403d9283730c1637d79f24"
+    },
+    {
+      "block_id": "src/0019",
+      "coverage": 0.5619420325302679,
+      "dict_index": 1,
+      "hit": true,
+      "packed_len": 813,
+      "raw_len": 8192,
+      "raw_sha256": "a72d10e27ca83372c9afd9709ffc7ccc311a20db8a403d9283730c1637d79f24"
+    },
+    {
+      "block_id": "src/0020",
+      "coverage": 0.5619420325302679,
+      "dict_index": 1,
+      "hit": true,
+      "packed_len": 813,
+      "raw_len": 8192,
+      "raw_sha256": "a72d10e27ca83372c9afd9709ffc7ccc311a20db8a403d9283730c1637d79f24"
+    },
+    {
+      "block_id": "json/0001",
+      "coverage": 0.6854064642507346,
+      "dict_index": 2,
+      "hit": true,
+      "packed_len": 558,
+      "raw_len": 5120,
+      "raw_sha256": "47b33646ce33e0d29c7e96cb930b6f7ddecb5fb33349873fb89a650d42fdf619"
+    },
+    {
+      "block_id": "json/0002",
+      "coverage": 0.6854064642507346,
+      "dict_index": 2,
+      "hit": true,
+      "packed_len": 558,
+      "raw_len": 5120,
+      "raw_sha256": "47b33646ce33e0d29c7e96cb930b6f7ddecb5fb33349873fb89a650d42fdf619"
+    },
+    {
+      "block_id": "json/0003",
+      "coverage": 0.6854064642507346,
+      "dict_index": 2,
+      "hit": true,
+      "packed_len": 558,
+      "raw_len": 5120,
+      "raw_sha256": "47b33646ce33e0d29c7e96cb930b6f7ddecb5fb33349873fb89a650d42fdf619"
+    },
+    {
+      "block_id": "json/0004",
+      "coverage": 0.6854064642507346,
+      "dict_index": 2,
+      "hit": true,
+      "packed_len": 558,
+      "raw_len": 5120,
+      "raw_sha256": "47b33646ce33e0d29c7e96cb930b6f7ddecb5fb33349873fb89a650d42fdf619"
+    },
+    {
+      "block_id": "json/0005",
+      "coverage": 0.6854064642507346,
+      "dict_index": 2,
+      "hit": true,
+      "packed_len": 558,
+      "raw_len": 5120,
+      "raw_sha256": "47b33646ce33e0d29c7e96cb930b6f7ddecb5fb33349873fb89a650d42fdf619"
+    },
+    {
+      "block_id": "json/0006",
+      "coverage": 0.6854064642507346,
+      "dict_index": 2,
+      "hit": true,
+      "packed_len": 558,
+      "raw_len": 5120,
+      "raw_sha256": "47b33646ce33e0d29c7e96cb930b6f7ddecb5fb33349873fb89a650d42fdf619"
+    },
+    {
+      "block_id": "json/0007",
+      "coverage": 0.6854064642507346,
+      "dict_index": 2,
+      "hit": true,
+      "packed_len": 558,
+      "raw_len": 5120,
+      "raw_sha256": "47b33646ce33e0d29c7e96cb930b6f7ddecb5fb33349873fb89a650d42fdf619"
+    },
+    {
+      "block_id": "json/0008",
+      "coverage": 0.6854064642507346,
+      "dict_index": 2,
+      "hit": true,
+      "packed_len": 558,
+      "raw_len": 5120,
+      "raw_sha256": "47b33646ce33e0d29c7e96cb930b6f7ddecb5fb33349873fb89a650d42fdf619"
+    },
+    {
+      "block_id": "json/0009",
+      "coverage": 0.6854064642507346,
+      "dict_index": 2,
+      "hit": true,
+      "packed_len": 558,
+      "raw_len": 5120,
+      "raw_sha256": "47b33646ce33e0d29c7e96cb930b6f7ddecb5fb33349873fb89a650d42fdf619"
+    },
+    {
+      "block_id": "json/0010",
+      "coverage": 0.6854064642507346,
+      "dict_index": 2,
+      "hit": true,
+      "packed_len": 558,
+      "raw_len": 5120,
+      "raw_sha256": "47b33646ce33e0d29c7e96cb930b6f7ddecb5fb33349873fb89a650d42fdf619"
+    },
+    {
+      "block_id": "json/0011",
+      "coverage": 0.6854064642507346,
+      "dict_index": 2,
+      "hit": true,
+      "packed_len": 558,
+      "raw_len": 5120,
+      "raw_sha256": "47b33646ce33e0d29c7e96cb930b6f7ddecb5fb33349873fb89a650d42fdf619"
+    },
+    {
+      "block_id": "json/0012",
+      "coverage": 0.6854064642507346,
+      "dict_index": 2,
+      "hit": true,
+      "packed_len": 558,
+      "raw_len": 5120,
+      "raw_sha256": "47b33646ce33e0d29c7e96cb930b6f7ddecb5fb33349873fb89a650d42fdf619"
+    },
+    {
+      "block_id": "mixed/0001",
+      "coverage": 0.30783019636600667,
+      "dict_index": 3,
+      "hit": true,
+      "packed_len": 1948,
+      "raw_len": 12288,
+      "raw_sha256": "d0c3478f9fef8c4258d33936e52214cf5348e66ceb66c4cee0e48fb78aff8e56"
+    },
+    {
+      "block_id": "mixed/0002",
+      "coverage": 0.30799315570765096,
+      "dict_index": 3,
+      "hit": true,
+      "packed_len": 1950,
+      "raw_len": 12288,
+      "raw_sha256": "04529d485f109ac2079a2d50542f60ca48b39fdc291f2292abbd32cd4f0a84b6"
+    },
+    {
+      "block_id": "mixed/0003",
+      "coverage": 0.30799315570765096,
+      "dict_index": 3,
+      "hit": true,
+      "packed_len": 1949,
+      "raw_len": 12288,
+      "raw_sha256": "c2c5ffb65d6346b983fd728c7c3ce1de860590c21b0cc40e0ac2d824b2cf3ea8"
+    },
+    {
+      "block_id": "mixed/0004",
+      "coverage": 0.3079116760368288,
+      "dict_index": 3,
+      "hit": true,
+      "packed_len": 1948,
+      "raw_len": 12288,
+      "raw_sha256": "018f59d5d7912614f532382d0bd4c5319ab47623d92a63c7b2a428bd232393de"
+    },
+    {
+      "block_id": "mixed/0005",
+      "coverage": 0.30799315570765096,
+      "dict_index": 3,
+      "hit": true,
+      "packed_len": 1945,
+      "raw_len": 12288,
+      "raw_sha256": "e9c0575047e0a40a507a4312606f0e5b74f92fd3ee789d0600467a3ab708c6ab"
+    },
+    {
+      "block_id": "mixed/0006",
+      "coverage": 0.30783019636600667,
+      "dict_index": 3,
+      "hit": true,
+      "packed_len": 1947,
+      "raw_len": 12288,
+      "raw_sha256": "403e11343e4d990c7a635808f6b687158fed23a15aefb309cce32ff61f4d2d51"
+    },
+    {
+      "block_id": "mixed/0007",
+      "coverage": 0.3079116760368288,
+      "dict_index": 3,
+      "hit": true,
+      "packed_len": 1947,
+      "raw_len": 12288,
+      "raw_sha256": "3de81465a10449b1f4199cbb821e54777930947eadfc61d7a7f56c6f87441628"
+    },
+    {
+      "block_id": "mixed/0008",
+      "coverage": 0.3079116760368288,
+      "dict_index": 3,
+      "hit": true,
+      "packed_len": 1945,
+      "raw_len": 12288,
+      "raw_sha256": "ab906dcb307ec87e2244a8cb0e34480244cc77579ee0df2997f2e5c52c69952e"
+    },
+    {
+      "block_id": "drift/0001_prose_a",
+      "coverage": 0.0,
+      "dict_index": null,
+      "hit": false,
+      "packed_len": 1298,
+      "raw_len": 8192,
+      "raw_sha256": "6ebcf030ce3feceb620e37efd7094677dcde430a3ef81cc9f177447711eb7bc4"
+    },
+    {
+      "block_id": "drift/0002_prose_b",
+      "coverage": 0.0,
+      "dict_index": null,
+      "hit": false,
+      "packed_len": 1295,
+      "raw_len": 8192,
+      "raw_sha256": "35de2221b60e29cfc4f72883c26481f6334f93580a872ad5aa0db432acec9423"
+    },
+    {
+      "block_id": "drift/0003_csv_a",
+      "coverage": 0.0,
+      "dict_index": null,
+      "hit": false,
+      "packed_len": 2807,
+      "raw_len": 8192,
+      "raw_sha256": "612a3192d92c3430abe538645ab37aef7adbb8a509bda6dd765296bca2353d7f"
+    },
+    {
+      "block_id": "drift/0004_csv_b",
+      "coverage": 0.0,
+      "dict_index": null,
+      "hit": false,
+      "packed_len": 2805,
+      "raw_len": 8192,
+      "raw_sha256": "76155a45bb095e04030986e419e0272e0754c040bfd09fb89ace68ccf3551fb9"
+    },
+    {
+      "block_id": "drift/0005_b64_a",
+      "coverage": 0.0,
+      "dict_index": null,
+      "hit": false,
+      "packed_len": 6242,
+      "raw_len": 8192,
+      "raw_sha256": "356b6bfd1f5787cdd9e03854fd2e034fcbcb56c2c31fcc5ad74de7d585e25af1"
+    },
+    {
+      "block_id": "drift/0006_b64_b",
+      "coverage": 0.0,
+      "dict_index": null,
+      "hit": false,
+      "packed_len": 6241,
+      "raw_len": 8192,
+      "raw_sha256": "3c219d513093c68827978f8bfca5aee652776bc079e338ac338c418e3ea8f8b2"
+    },
+    {
+      "block_id": "size/0001_one_byte",
+      "coverage": 1.0,
+      "dict_index": 1,
+      "hit": true,
+      "packed_len": 17,
+      "raw_len": 1,
+      "raw_sha256": "2d711642b726b04401627ca9fbac32f5c8530fb1903cc4db02258717921a4881"
+    },
+    {
+      "block_id": "size/0002_fifteen_bytes",
+      "coverage": 0.0,
+      "dict_index": null,
+      "hit": false,
+      "packed_len": 31,
+      "raw_len": 15,
+      "raw_sha256": "c4cdea29227e36d3cbb8f230803bc2f21cf5216203a0bbd37b55fb5ab9ea1f39"
+    },
+    {
+      "block_id": "size/0003_sixteen_bytes",
+      "coverage": 1.0,
+      "dict_index": 0,
+      "hit": true,
+      "packed_len": 18,
+      "raw_len": 16,
+      "raw_sha256": "b6b9428a4ecec8cdabed36363b2f4561a9a308161d196a0d760e8e5e39e27aba"
+    },
+    {
+      "block_id": "size/0004_sixty_four_bytes",
+      "coverage": 0.1836734693877551,
+      "dict_index": null,
+      "hit": false,
+      "packed_len": 77,
+      "raw_len": 64,
+      "raw_sha256": "2825123270a8b7d97cd1aaf4083ae9f7523960eac6e1b8c040d98c4983712c1b"
+    },
+    {
+      "block_id": "size/0005_one_kib",
+      "coverage": 0.4717542120911794,
+      "dict_index": 0,
+      "hit": true,
+      "packed_len": 221,
+      "raw_len": 1024,
+      "raw_sha256": "5128d0c401fa1dcee620669d8a6cc1d0e8a1d7c5ab0857f5782dbd9ae78ee474"
+    },
+    {
+      "block_id": "size/0006_long_128k",
+      "coverage": 0.4073418436252928,
+      "dict_index": 0,
+      "hit": true,
+      "packed_len": 19944,
+      "raw_len": 131072,
+      "raw_sha256": "49ec2442ad281b88362612522e24715a29e83b9ef241a06a8200fc111124bf92"
+    }
+  ],
+  "dicts": [
+    {
+      "batch": "logs",
+      "dict_bytes": 8192,
+      "index": 0,
+      "sample_bytes": 131072,
+      "sha256": "41c9283fe00581cf62cea3c4d63e12c84a5e0d31ab4196d607fa4fc7af5c03a4"
+    },
+    {
+      "batch": "src",
+      "dict_bytes": 8192,
+      "index": 1,
+      "sample_bytes": 131072,
+      "sha256": "51bdc5484f27da477a4932ff965c29ef4db340700b010218b8a3b63d066f13a9"
+    },
+    {
+      "batch": "json",
+      "dict_bytes": 8192,
+      "index": 2,
+      "sample_bytes": 61440,
+      "sha256": "b35b7bca6cedcd8d669b5203adcca98eb880fb91b20b88a0dfa7f3e79f127b7b"
+    },
+    {
+      "batch": "mixed",
+      "dict_bytes": 8192,
+      "index": 3,
+      "sample_bytes": 65536,
+      "sha256": "5dc0406d0567d90d79800cdb019e093e2fe301937089235e739b4ebd7b0018f8"
+    }
+  ],
+  "pool_id": "47ba03cdff3422671598bbf21df51a0dd3ea5b8ddc8a4c4d628d1f8c58743a8c"
+}

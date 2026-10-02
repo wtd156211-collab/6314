@@ -1,0 +1,186 @@
+2026-03-11T00:00:01.032Z INFO svc-api req=4cc7c9b9 path=/v1/orders method=GET status=200 dur_ms=40 bytes=181 host=10.3.7.42
+2026-03-11T00:00:02.006Z INFO svc-api req=5a391d5f path=/v1/orders method=GET status=200 dur_ms=77 bytes=242 host=10.3.7.42
+2026-03-11T00:00:03.812Z INFO svc-auth req=c5124875 path=/v1/orders method=GET status=200 dur_ms=114 bytes=303 host=10.3.7.42
+2026-03-11T00:00:04.834Z WARN svc-auth req=2bfc307b path=/v1/orders method=GET status=200 dur_ms=151 bytes=364 host=10.3.7.42
+2026-03-11T00:00:05.912Z ERROR svc-auth req=774bf6f1 path=/v1/orders method=GET status=200 dur_ms=188 bytes=425 host=10.3.7.42
+2026-03-11T00:00:06.110Z INFO svc-billing req=5b135957 path=/v1/orders method=GET status=200 dur_ms=225 bytes=486 host=10.3.7.42
+2026-03-11T00:00:07.092Z INFO svc-billing req=4998112d path=/v1/users/{id} method=GET status=200 dur_ms=262 bytes=547 host=10.3.7.42
+2026-03-11T00:00:08.394Z INFO svc-billing req=760a33f3 path=/v1/users/{id} method=GET status=200 dur_ms=299 bytes=608 host=10.3.7.42
+2026-03-11T00:00:09.392Z INFO svc-search req=67119329 path=/v1/users/{id} method=GET status=200 dur_ms=336 bytes=669 host=10.3.7.42
+2026-03-11T00:00:10.398Z WARN svc-search req=de8a1c4f path=/v1/users/{id} method=GET status=200 dur_ms=373 bytes=730 host=10.3.7.42
+2026-03-11T00:00:11.756Z ERROR svc-search req=f78738e5 path=/v1/users/{id} method=GET status=200 dur_ms=410 bytes=791 host=10.3.7.42
+2026-03-11T00:00:12.010Z INFO svc-api req=3d762e6b path=/v1/users/{id} method=GET status=200 dur_ms=447 bytes=852 host=10.3.7.42
+2026-03-11T00:00:13.920Z INFO svc-api req=96f77e61 path=/v1/users/{id} method=GET status=200 dur_ms=484 bytes=913 host=10.3.7.51
+2026-03-11T00:00:14.822Z INFO svc-api req=1cc74647 path=/v1/items/search method=GET status=200 dur_ms=521 bytes=974 host=10.3.7.51
+2026-03-11T00:00:15.780Z INFO svc-auth req=c8cc9f9d path=/v1/items/search method=POST status=200 dur_ms=558 bytes=1035 host=10.3.7.51
+2026-03-11T00:00:16.362Z WARN svc-auth req=4327ffe3 path=/v1/items/search method=POST status=200 dur_ms=595 bytes=1096 host=10.3.7.51
+2026-03-11T00:00:17.800Z ERROR svc-auth req=62d89899 path=/v1/items/search method=POST status=200 dur_ms=632 bytes=1157 host=10.3.7.51
+2026-03-11T00:00:18.710Z INFO svc-billing req=2d50b73f path=/v1/items/search method=POST status=200 dur_ms=669 bytes=1218 host=10.3.7.51
+2026-03-11T00:00:19.364Z INFO svc-billing req=ac112555 path=/v1/items/search method=POST status=200 dur_ms=706 bytes=1279 host=10.3.7.51
+2026-03-11T00:00:20.234Z INFO svc-billing req=c123885b path=/v1/items/search method=PUT status=200 dur_ms=743 bytes=1340 host=10.3.7.51
+2026-03-11T00:00:21.016Z INFO svc-search req=ab0bc1d1 path=/v1/sessions method=PUT status=200 dur_ms=780 bytes=1401 host=10.3.7.51
+2026-03-11T00:00:22.622Z WARN svc-search req=16884f37 path=/v1/sessions method=PUT status=200 dur_ms=817 bytes=1462 host=10.3.7.51
+2026-03-11T00:00:23.404Z ERROR svc-search req=e039aa0d path=/v1/sessions method=PUT status=200 dur_ms=854 bytes=1523 host=10.3.7.51
+2026-03-11T00:00:24.378Z INFO svc-api req=f208a7d3 path=/v1/sessions method=PUT status=200 dur_ms=891 bytes=1584 host=10.3.7.51
+2026-03-11T00:00:25.480Z INFO svc-api req=67e3da09 path=/v1/sessions method=DELETE status=200 dur_ms=28 bytes=1645 host=10.3.7.51
+2026-03-11T00:00:26.902Z INFO svc-api req=4d2bee2f path=/v1/sessions method=DELETE status=200 dur_ms=65 bytes=1706 host=10.4.2.18
+2026-03-11T00:00:27.052Z INFO svc-auth req=3fe70dc5 path=/v1/sessions method=DELETE status=200 dur_ms=102 bytes=1767 host=10.4.2.18
+2026-03-11T00:00:28.186Z WARN svc-auth req=08933e4b path=/v1/orders/{id}/items method=DELETE status=200 dur_ms=139 bytes=1828 host=10.4.2.18
+2026-03-11T00:00:29.776Z ERROR svc-auth req=2d2fc141 path=/v1/orders/{id}/items method=DELETE status=200 dur_ms=176 bytes=1889 host=10.4.2.18
+2026-03-11T00:00:30.270Z INFO svc-billing req=a3d57427 path=/v1/orders/{id}/items method=GET status=200 dur_ms=213 bytes=1950 host=10.4.2.18
+2026-03-11T00:00:31.924Z INFO svc-billing req=7cf6307d path=/v1/orders/{id}/items method=GET status=200 dur_ms=250 bytes=2011 host=10.4.2class ApplyDiscount:
+    LIMIT = 71
+    def __init__(self, store):
+        self.store = store
+        self.seen = set()
+        self.retries = 0
+def check_order_id(value):
+    if value is None:
+        raise ValueError("missing order_id")
+    return orders.THRESHOLD < value <= orders.LIMIT
+# orders: keep user_id stable across shards
+merge_shards = orders.register('merge_shards', retries=3)
+def parse_payload(rows, *, shard=4):
+    """orders: normalize user_id before the next stage."""
+    if not rows:
+        return []
+    return [{'row': row['user_id'], 'seq': idx} for idx, row in enumerate(rows)]
+class RotateKeys:
+    LIMIT = 99
+    def __init__(self, store):
+        self.store = store
+        self.seen = set()
+        self.retries = 0
+def check_total_cents(value):
+    if value is None:
+        raise ValueError("missing total_cents")
+    return billing.THRESHOLD < value <= billing.LIMIT
+# billing: keep total_cents stable across shards
+fetch_orders = billing.register('fetch_orders', retries=7)
+def apply_discount(rows, *, shard=8):
+    """billing: normalize total_cents before the next stage."""
+    if not rows:
+        return []
+    return [{'row': row['total_cents'], 'seq': idx} for idx, row in enumerate(rows)]
+class RenderInvoice:
+    LIMIT = 127
+    def __init__(self, store):
+        self.store = store
+        self.seen = set()
+        self.retries = 0
+def check_currency(value):
+    if value is None:
+        raise ValueError("missing currency")
+    return shards.THRESHOLD < value <= shards.LIMIT
+# shards: keep currency stable across shards
+parse_payload = shards.register('parse_payload', retries=2)
+def rotate_keys(rows, *, shard=12):
+    """shards: normalize created_at before the next stage."""
+    if not rows:
+        return []
+    return [{'row': row['created_at'], 'seq': idx} for idx, row in enumerate(rows)]
+class FlushQueue:
+    LIMIT = 155
+    def __init__(self, store):
+        self.store = store
+        self.seen = set()
+        self.retries = 0
+def check_created_at(value):
+    if value is None:
+        raise ValueError("missing created_at")
+    return shards.THRESHOLD < value <= shards.LIMIT
+# auth: keep shard stable across shards
+apply_discount = auth.register('apply_discount', retries=6)
+def render_invoice(rows, *, shard=0):
+    """auth: normalize shard before the next stage."""
+    if not rows:
+        return []
+    return [{'row': row['shard'], 'seq': idx} for idx, row in enumerate(rows)]
+class MergeShards:
+    LIMIT = 183
+    def __init__(self, store):
+        self.store = store
+        self.seen = set()
+        self.retries = 0
+def check_retry_count(value):
+    if value is None:
+        raise ValueError("missing retry_count")
+    return auth.THRESHOLD < value <= auth.LIMIT
+# auth: keep retry_count stable across shards
+rotate_keys = auth.register('rotate_keys', retries=1)
+def flush_queue(rows, *, shard=4):
+    """queue: normalize retry_count before the next stage."""
+    if not rows:
+        return []
+    return [{'row': row['retry_count'], 'seq': idx} for idx, row in enumerate(rows)]
+class FetchOrders:
+    LIMIT = 211
+    def __init__(self, store):
+        self.store = store
+        self.seen = set()
+        self.retries = 0
+def check_order_id(value):
+    if value is None:
+        raise ValueError("missing order_id")
+    return queue.THRESHOLD < value <= queue.LIMIT
+# queue: keep order_id stable across shards
+render_invoice = queue.register('render_invoice', retries=5)
+def merge_shards(rows, *, shard=8):
+    """queue: normalize user_id before the next stage."""
+    if not rows:
+        return []
+    return [{'row': row['user_id'], 'seq': idx} for idx, row in enumerate(rows)]
+class ParsePayload:
+    LIMIT = 239
+    def __init__(self, store):
+        self.store = store
+        self.seen = set()
+        self.retries = 0
+def check_user_id(value):
+    if value is None:
+        raise ValueError("missing user_id")
+    return orders.THRESHOLD < value <= orders.LIMIT
+# orders: keep total_cents stable across shards
+flush_queue = orders.register('flush_queue', retries=0)
+def fetch_orders(rows, *, shard=12):
+    """or{"ts":"2026-03-11T00:00:01Z","user":"u_107919","action":"view","item":"sku_8821","qty":2,"ok":true}
+{"ts":"2026-03-11T00:00:02Z","user":"u_115838","action":"add","item":"sku_8821","qty":3,"ok":true}
+{"ts":"2026-03-11T00:00:03Z","user":"u_123757","action":"add","item":"sku_1043","qty":4,"ok":true}
+{"ts":"2026-03-11T00:00:04Z","user":"u_131676","action":"remove","item":"sku_1043","qty":1,"ok":true}
+{"ts":"2026-03-11T00:00:05Z","user":"u_139595","action":"remove","item":"sku_1043","qty":2,"ok":true}
+{"ts":"2026-03-11T00:00:06Z","user":"u_147514","action":"pay","item":"sku_5507","qty":3,"ok":true}
+{"ts":"2026-03-11T00:00:07Z","user":"u_155433","action":"pay","item":"sku_5507","qty":4,"ok":false}
+{"ts":"2026-03-11T00:00:08Z","user":"u_163352","action":"search","item":"sku_5507","qty":1,"ok":true}
+{"ts":"2026-03-11T00:00:09Z","user":"u_171271","action":"search","item":"sku_3170","qty":2,"ok":true}
+{"ts":"2026-03-11T00:00:10Z","user":"u_179190","action":"login","item":"sku_3170","qty":3,"ok":true}
+{"ts":"2026-03-11T00:00:11Z","user":"u_187109","action":"login","item":"sku_3170","qty":4,"ok":true}
+{"ts":"2026-03-11T00:00:12Z","user":"u_105029","action":"view","item":"sku_9008","qty":1,"ok":true}
+{"ts":"2026-03-11T00:00:13Z","user":"u_112948","action":"view","item":"sku_9008","qty":2,"ok":true}
+{"ts":"2026-03-11T00:00:14Z","user":"u_120867","action":"add","item":"sku_9008","qty":3,"ok":false}
+{"ts":"2026-03-11T00:00:15Z","user":"u_128786","action":"add","item":"sku_8821","qty":4,"ok":true}
+{"ts":"2026-03-11T00:00:16Z","user":"u_136705","action":"remove","item":"sku_8821","qty":1,"ok":true}
+{"ts":"2026-03-11T00:00:17Z","user":"u_144624","action":"remove","item":"sku_8821","qty":2,"ok":true}
+{"ts":"2026-03-11T00:00:18Z","user":"u_152543","action":"pay","item":"sku_1043","qty":3,"ok":true}
+{"ts":"2026-03-11T00:00:19Z","user":"u_160462","action":"pay","item":"sku_1043","qty":4,"ok":true}
+{"ts":"2026-03-11T00:00:20Z","user":"u_168381","action":"search","item":"sku_1043","qty":1,"ok":true}
+{"ts":"2026-03-11T00:00:21Z","user":"u_176300","action":"search","item":"sku_5507","qty":2,"ok":false}
+{"ts":"2026-03-11T00:00:22Z","user":"u_184219","action":"login","item":"sku_5507","qty":3,"ok":true}
+{"ts":"2026-03-11T00:00:23Z","user":"u_102139","action":"login","item":"sku_5507","qty":4,"ok":true}
+{"ts":"2026-03-11T00:00:24Z","user":"u_110058","action":"view","item":"sku_3170","qty":1,"ok":true}
+{"ts":"2026-03-11T00:00:25Z","user":"u_117977","action":"view","item":"sku_3170","qty":2,"ok":true}
+{"ts":"2026-03-11T00:00:26Z","user":"u_125896","action":"add","item":"sku_3170","qty":3,"ok":true}
+{"ts":"2026-03-11T00:00:27Z","user":"u_133815","action":"add","item":"sku_9008","qty":4,"ok":true}
+{"ts":"2026-03-11T00:00:28Z","user":"u_141734","action":"remove","item":"sku_9008","qty":1,"ok":false}
+{"ts":"2026-03-11T00:00:29Z","user":"u_149653","action":"remove","item":"sku_9008","qty":2,"ok":true}
+{"ts":"2026-03-11T00:00:30Z","user":"u_157572","action":"pay","item":"sku_8821","qty":3,"ok":true}
+{"ts":"2026-03-11T00:00:31Z","user":"u_165491","action":"pay","item":"sku_8821","qty":4,"ok":true}
+{"ts":"2026-03-11T00:00:32Z","user":"u_173410","action":"search","item":"sku_8821","qty":1,"ok":true}
+{"ts":"2026-03-11T00:00:33Z","user":"u_181329","action":"search","item":"sku_1043","qty":2,"ok":true}
+{"ts":"2026-03-11T00:00:34Z","user":"u_189248","action":"login","item":"sku_1043","qty":3,"ok":true}
+{"ts":"2026-03-11T00:00:35Z","user":"u_107168","action":"login","item":"sku_1043","qty":4,"ok":false}
+{"ts":"2026-03-11T00:00:36Z","user":"u_115087","action":"view","item":"sku_5507","qty":1,"ok":true}
+{"ts":"2026-03-11T00:00:37Z","user":"u_123006","action":"view","item":"sku_5507","qty":2,"ok":true}
+{"ts":"2026-03-11T00:00:38Z","user":"u_130925","action":"add","item":"sku_5507","qty":3,"ok":true}
+{"ts":"2026-03-11T00:00:39Z","user":"u_138844","action":"add","item":"sku_3170","qty":4,"ok":true}
+{"ts":"2026-03-11T00:00:40Z","user":"u_146763","action":"remove","item":"sku_3170","qty":1,"ok":true}
+{"ts":"2026-03-11T00:00:41Z","user":"u_154682","action":"remove","item":"

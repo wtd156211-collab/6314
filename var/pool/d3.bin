@@ -1,0 +1,193 @@
+er_id(value):
+  essions method=Did")
+    return id(value):
+    iions method=DELEns method=DELETEons method=DELETr_id")
+    returr_id(value):
+   s(rows, *, shardsions method=DELssions method=DEtus=200 dur_ms=5tus=200 dur_ms=6tus=200 dur_ms=8/orders/{id}/ite/v1/orders/{id}//{id}/items meth1/orders/{id}/it=/v1/orders/{id}ath=/v1/orders/{ders/{id}/items d}/items method=ers/{id}/items messions method=Ph=/v1/orders/{idid}/items methodions method=PUT ns method=PUT stons method=PUT sorders/{id}/itempath=/v1/orders/rders/{id}/itemsrs/{id}/items mes method=PUT stas.THRESHOLD < vas/{id}/items metsions method=PUTssions method=PUth=/v1/orders/{itus=200 dur_ms=4tus=200 dur_ms=7v1/orders/{id}/i{id}/items metho host=10.4.2.18
+ method=DELETE s method=POST sta method=PUT stat.18
+2026-03-11T0.2.18
+2026-03-11.4.2.18
+2026-03-0.4.2.18
+2026-0310.4.2.18
+2026-018
+2026-03-11T002.18
+2026-03-11T4.2.18
+2026-03-18
+2026-03-11T00:=10.4.2.18
+2026-=DELETE status=2=POST status=200=PUT status=200 DELETE status=20E status=200 durELETE status=200ETE status=200 dLETE status=200 OST status=200 dPOST status=200 PUT status=200 dST status=200 duTE status=200 duUT status=200 duarch method=POSTch method=POST sd=DELETE status=d=POST status=20d=PUT status=200earch method=POSethod=DELETE staethod=POST statuethod=PUT statush method=POST sthod=DELETE statuhod=POST status=hod=PUT status=2host=10.4.2.18
+2method=DELETE stmethod=POST statmethod=PUT statuod=DELETE statusod=POST status=2od=PUT status=20ost=10.4.2.18
+20rch method=POST s method=DELETE search method=POst=10.4.2.18
+202t=10.4.2.18
+2026thod=DELETE statthod=POST statusthod=PUT status=
+        return 
+    if not rows
+    return [{'r        return [       return []      return []
+     return []
+     if not rows:    return []
+      return [{'ro   if not rows:
+   return []
+      return [{'row  if not rows:
+   return []
+      return [{'row' 'seq': idx} for []
+    return [ before the next enumerate(rows) for idx, row in idx, row in enu idx} for idx, r if not rows:
+   in enumerate(ro next stage."""
+ not rows:
+      return []
+    r return [{'row': row in enumerat rows:
+        r stage."""
+    i svc-search req= the next stage."
+    if not row""
+    if not ro"""
+    if not r': idx} for idx,'], 'seq': idx} 'seq': idx} for , 'seq': idx} fo, row in enumera."""
+    if not /orders method=G/search method=P/v1/orders metho1/orders method=:
+        return: idx} for idx, =/v1/orders meth[]
+    return [{]
+    return [{'], 'seq': idx} fage."""
+    if nate(rows)]
+classath=/v1/orders mbefore the next ders method=GET dx, row in enumedx} for idx, rowe next stage."""e the next stagee."""
+    if notefore the next senumerate(rows)]eq': idx} for iderate(rows)]
+claers method=GET seturn []
+    reteturn [{'row': rext stage."""
+  f not rows:
+    for idx, row in fore the next stge."""
+    if noh=/v1/orders methe next stage.""idx, row in enumidx} for idx, roif not rows:
+   in enumerate(rowmerate(rows)]
+cln []
+    return n [{'row': row['n enumerate(rowsnext stage."""
+ not rows:
+      numerate(rows)]
+or idx, row in eorders method=GEore the next staot rows:
+       ow in enumerate(ows:
+        retpath=/v1/orders q': idx} for idxr idx, row in enrate(rows)]
+clasrders method=GETre the next stagreturn []
+    rereturn [{'row': rn []
+    returnrn [{'row': row[row in enumeraterows:
+        rers method=GET sts:
+        returseq': idx} for istage."""
+    ift rows:
+        t stage."""
+    tage."""
+    if te(rows)]
+class th=/v1/orders methe next stage."turn []
+    retuturn [{'row': rotus=200 dur_ms=1tus=200 dur_ms=2umerate(rows)]
+curn []
+    retururn [{'row': rowv1/orders methodw in enumerate(rws:
+        retux, row in enumerxt stage."""
+   x} for idx, row } for idx, row i
+        raise V
+        self.re
+        self.se
+        self.st
+    def __init_
+    if value is        raise Va        self.ret        self.see        self.sto       raise Val       self.retr       self.seen       self.stor      raise Valu      self.retri      self.seen       self.store     raise Value     self.retrie     self.seen =     self.store     def __init__    if value is     raise ValueE    self.retries    self.seen =     self.store =   def __init__(   if value is N   raise ValueEr   self.retries    self.seen = s   self.store =   def __init__(s  if value is No  raise ValueErr  self.retries =  self.seen = se  self.store = s = set()
+        = store
+        None:
+        r ValueError("mis __init__(self,  def __init__(se if value is Non is None:
+       path=/v1/items/ path=/v1/sessio path=/v1/users/ raise ValueErro self.retries =  self.seen = set self.store = st set()
+        s stable across s store
+        s store):
+        value is None:
+()
+        self.(rows, *, shard=(self, store):
+ (value):
+    if )
+        self.r):
+        self.):
+    if value , store):
+      .THRESHOLD < val.retries = 0
+def.seen = set()
+  .store = store
+ /items/search me/sessions method/users/{id} meth/v1/items/search/v1/sessions met/v1/users/{id} m/{id} method=GET1/items/search m1/sessions metho1/users/{id} met:
+        raise :
+        self.s:
+    if value i= set()
+        = store
+        =/v1/items/searc=/v1/sessions me=/v1/users/{id} ESHOLD < value <HOLD < value <= HRESHOLD < valueNone:
+        raRESHOLD < value SHOLD < value <=THRESHOLD < valuValueError("miss_(self, store):
+__(self, store):__init__(self, s_init__(self, stable across sharaise ValueError(alue is None:
+  alue):
+    if vaalueError("missiath=/v1/items/seath=/v1/sessionsath=/v1/users/{ible across sharddef __init__(seld} method=GET ste
+        self.se = store
+      e ValueError("mie across shards
+e is None:
+     e):
+        selfe):
+    if valuee:
+        raiseeError("missing een = set()
+    ef __init__(selfelf, store):
+   elf.retries = 0
+elf.seen = set()elf.store = storems/search methoen = set()
+     ers/{id} method=es = 0
+def checket()
+        seletries = 0
+def cf __init__(self,f value is None:f, store):
+     f.retries = 0
+def.seen = set()
+ f.store = store
+h=/v1/items/searh=/v1/sessions mh=/v1/users/{id}id} method=GET sies = 0
+def checif value is Noneinit__(self, stois None:
+       ise ValueError("it__(self, storeitems/search metle across shardslf, store):
+    lf.retries = 0
+dlf.seen = set()
+lf.store = storelue is None:
+   lue):
+    if vallueError("missinms/search methodn = set()
+      ne:
+        raisnit__(self, storone:
+        raiore
+        selfore = store
+    ore):
+        sepath=/v1/items/spath=/v1/sessionpath=/v1/users/{raise ValueErrorre
+        self.re = store
+     re):
+        selretries = 0
+def ries = 0
+def chers/{id} method=Gs = 0
+def check_s None:
+        s/search method=s/{id} method=GEse ValueError("mseen = set()
+   self, store):
+  self.retries = 0self.seen = set(self.store = stosers/{id} methodsessions method=set()
+        sestable across shstore
+        sestore = store
+  store):
+        t()
+        selft__(self, store)table across shatems/search methth=/v1/items/seath=/v1/sessions th=/v1/users/{idtore
+        seltore = store
+   tore):
+        stries = 0
+def chue is None:
+    ue):
+    if valuueError("missingusers/{id} methov1/items/search v1/sessions methv1/users/{id} mevalue is None:
+ value):
+    if v{id} method=GET } method=GET sta INFO svc-api re INFO svc-billin svc-billing reqFO svc-billing rINFO svc-api reqINFO svc-billingNFO svc-api req=NFO svc-billing O svc-billing reZ INFO svc-api rZ INFO svc-billis method=GET stasvc-billing req=26-03-11T00:00:0 path=/v1/orders26-03-11T00:00:126-03-11T00:00:2 host=10.3.7.42
+.3.7.42
+2026-03-.42
+2026-03-11T0.7.42
+2026-03-110.3.7.42
+2026-0310.3.7.42
+2026-02
+2026-03-11T00:3.7.42
+2026-03-142
+2026-03-11T007.42
+2026-03-11T=10.3.7.42
+2026-host=10.3.7.42
+2ost=10.3.7.42
+20st=10.3.7.42
+202t=10.3.7.42
+2026 host=10.3.7.51
+.3.7.51
+2026-03-.51
+2026-03-11T0.7.51
+2026-03-110.3.7.51
+2026-031
+2026-03-11T00:10.3.7.51
+2026-03.7.51
+2026-03-151
+2026-03-11T007.51
+2026-03-11T=10.3.7.51
+2026-host=10.3.7.51
+2ost=10.3.7.51
+20st=10.3.7.51
+202t=10.3.7.51
+2026 method=GET stat=GET status=200 ET status=200 duGET status=200 dd=GET status=200ethod=GET statushod=GET status=2method=GET statuod=GET status=20thod=GET status=T status=200 dur
+2026-03-11T00:0 status=200 dur_026-03-11T00:00:2026-03-11T00:00atus=200 dur_ms=status=200 dur_mtatus=200 dur_ms

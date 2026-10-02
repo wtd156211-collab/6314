@@ -1,0 +1,33 @@
+{
+  "dicts": [
+    {
+      "batch": "logs",
+      "dict_bytes": 8192,
+      "index": 0,
+      "sample_bytes": 131072,
+      "sha256": "41c9283fe00581cf62cea3c4d63e12c84a5e0d31ab4196d607fa4fc7af5c03a4"
+    },
+    {
+      "batch": "src",
+      "dict_bytes": 8192,
+      "index": 1,
+      "sample_bytes": 131072,
+      "sha256": "51bdc5484f27da477a4932ff965c29ef4db340700b010218b8a3b63d066f13a9"
+    },
+    {
+      "batch": "json",
+      "dict_bytes": 8192,
+      "index": 2,
+      "sample_bytes": 61440,
+      "sha256": "b35b7bca6cedcd8d669b5203adcca98eb880fb91b20b88a0dfa7f3e79f127b7b"
+    },
+    {
+      "batch": "mixed",
+      "dict_bytes": 8192,
+      "index": 3,
+      "sample_bytes": 65536,
+      "sha256": "5dc0406d0567d90d79800cdb019e093e2fe301937089235e739b4ebd7b0018f8"
+    }
+  ],
+  "pool_id": "47ba03cdff3422671598bbf21df51a0dd3ea5b8ddc8a4c4d628d1f8c58743a8c"
+}

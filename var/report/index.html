@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>dictpool 报告</title>
+<style>
+  :root { color-scheme: light; }
+  body { font-family: system-ui, "PingFang SC", "Microsoft YaHei", sans-serif;
+         margin: 2rem auto; max-width: 1080px; padding: 0 1rem; color: #1c1c1e; }
+  h1 { font-size: 1.4rem; }
+  h2 { font-size: 1.1rem; margin-top: 2rem; }
+  .meta { color: #555; font-size: 0.85rem; word-break: break-all; }
+  table { border-collapse: collapse; width: 100%; font-size: 0.9rem;
+          font-variant-numeric: tabular-nums; }
+  th, td { border: 1px solid #d8d8dc; padding: 0.35rem 0.6rem; text-align: right; }
+  th:first-child, td:first-child { text-align: left; }
+  th { background: #f2f2f5; }
+  tr.fail td { background: #ffe3e3; color: #a40000; }
+  tr.fail td:first-child::after { content: " \26A0"; }
+  .ok { color: #0a7a2f; font-weight: 600; }
+  .bad { color: #c00; font-weight: 700; }
+  select { font-size: 0.9rem; margin-bottom: 0.5rem; }
+</style>
+</head>
+<body>
+<h1>dictpool 压缩报告</h1>
+<p class="meta" id="meta"></p>
+<p class="meta" id="gates"></p>
+
+<h2>逐批汇总</h2>
+<table id="summary">
+  <thead><tr>
+    <th>批次</th><th>块数</th><th>原始字节</th><th>压缩后字节</th>
+    <th>命中率</th><th>压缩率</th><th>字典字节</th><th>判定</th>
+  </tr></thead>
+  <tbody></tbody>
+</table>
+
+<h2>逐块明细</h2>
+<select id="filter"></select>
+<table id="detail">
+  <thead><tr>
+    <th>块 ID</th><th>原始字节</th><th>字典索引</th><th>覆盖度</th>
+    <th>压缩后字节</th><th>命中</th>
+  </tr></thead>
+  <tbody></tbody>
+</table>
+
+<script type="application/json" id="dictpool-data">
+{"pool_id": "47ba03cdff3422671598bbf21df51a0dd3ea5b8ddc8a4c4d628d1f8c58743a8c", "thresholds": {"hit_rate_min": 0.25, "ratio_max": 1.0, "dict_max_bytes": 8192, "coverage_threshold": 0.25}, "batches": [{"name": "logs", "blocks": 24, "raw_bytes": 196608, "packed_bytes": 32757, "hits": 24, "hit_rate": 1.0, "ratio": 0.1666107177734375, "dict_bytes": 8192, "ok": true}, {"name": "src", "blocks": 20, "raw_bytes": 163840, "packed_bytes": 16260, "hits": 20, "hit_rate": 1.0, "ratio": 0.0992431640625, "dict_bytes": 8192, "ok": true}, {"name": "json", "blocks": 12, "raw_bytes": 61440, "packed_bytes": 6696, "hits": 12, "hit_rate": 1.0, "ratio": 0.108984375, "dict_bytes": 8192, "ok": true}, {"name": "mixed", "blocks": 8, "raw_bytes": 98304, "packed_bytes": 15579, "hits": 8, "hit_rate": 1.0, "ratio": 0.158477783203125, "dict_bytes": 8192, "ok": true}, {"name": "drift", "blocks": 6, "raw_bytes": 49152, "packed_bytes": 20688, "hits": 0, "hit_rate": 0.0, "ratio": 0.4208984375, "dict_bytes": 0, "ok": false}, {"name": "size", "blocks": 6, "raw_bytes": 132192, "packed_bytes": 20308, "hits": 4, "hit_rate": 0.6666666666666666, "ratio": 0.1536250302590172, "dict_bytes": 8192, "ok": true}], "blocks": [{"block_id": "logs/0001", "dict_index": 0, "raw_len": 8192, "packed_len": 1367, "coverage": 0.4889323712853125, "hit": true}, {"block_id": "logs/0002", "dict_index": 0, "raw_len": 8192, "packed_len": 1371, "coverage": 0.48966613672496023, "hit": true}, {"block_id": "logs/0003", "dict_index": 0, "raw_len": 8192, "packed_len": 1364, "coverage": 0.48991072520484286, "hit": true}, {"block_id": "logs/0004", "dict_index": 0, "raw_len": 8192, "packed_len": 1361, "coverage": 0.48942154824507766, "hit": true}, {"block_id": "logs/0005", "dict_index": 0, "raw_len": 8192, "packed_len": 1364, "coverage": 0.48929925400513635, "hit": true}, {"block_id": "logs/0006", "dict_index": 0, "raw_len": 8192, "packed_len": 1371, "coverage": 0.48929925400513635, "hit": true}, {"block_id": "logs/0007", "dict_index": 0, "raw_len": 8192, "packed_len": 1370, "coverage": 0.48929925400513635, "hit": true}, {"block_id": "logs/0008", "dict_index": 0, "raw_len": 8192, "packed_len": 1369, "coverage": 0.49003301944478417, "hit": true}, {"block_id": "logs/0009", "dict_index": 0, "raw_len": 8192, "packed_len": 1378, "coverage": 0.48881007704537116, "hit": true}, {"block_id": "logs/0010", "dict_index": 0, "raw_len": 8192, "packed_len": 1361, "coverage": 0.48929925400513635, "hit": true}, {"block_id": "logs/0011", "dict_index": 0, "raw_len": 8192, "packed_len": 1367, "coverage": 0.48978843096490154, "hit": true}, {"block_id": "logs/0012", "dict_index": 0, "raw_len": 8192, "packed_len": 1372, "coverage": 0.48966613672496023, "hit": true}, {"block_id": "logs/0013", "dict_index": 0, "raw_len": 8192, "packed_len": 1366, "coverage": 0.48966613672496023, "hit": true}, {"block_id": "logs/0014", "dict_index": 0, "raw_len": 8192, "packed_len": 1358, "coverage": 0.4890546655252538, "hit": true}, {"block_id": "logs/0015", "dict_index": 0, "raw_len": 8192, "packed_len": 1361, "coverage": 0.48868778280542985, "hit": true}, {"block_id": "logs/0016", "dict_index": 0, "raw_len": 8192, "packed_len": 1365, "coverage": 0.49003301944478417, "hit": true}, {"block_id": "logs/0017", "dict_index": 0, "raw_len": 8192, "packed_len": 1364, "coverage": 0.48881007704537116, "hit": true}, {"block_id": "logs/0018", "dict_index": 0, "raw_len": 8192, "packed_len": 1362, "coverage": 0.48917695976519504, "hit": true}, {"block_id": "logs/0019", "dict_index": 0, "raw_len": 8192, "packed_len": 1359, "coverage": 0.48917695976519504, "hit": true}, {"block_id": "logs/0020", "dict_index": 0, "raw_len": 8192, "packed_len": 1369, "coverage": 0.48832090008560597, "hit": true}, {"block_id": "logs/0021", "dict_index": 0, "raw_len": 8192, "packed_len": 1356, "coverage": 0.4889323712853125, "hit": true}, {"block_id": "logs/0022", "dict_index": 0, "raw_len": 8192, "packed_len": 1370, "coverage": 0.48881007704537116, "hit": true}, {"block_id": "logs/0023", "dict_index": 0, "raw_len": 8192, "packed_len": 1355, "coverage": 0.4885654885654886, "hit": true}, {"block_id": "logs/0024", "dict_index": 0, "raw_len": 8192, "packed_len": 1357, "coverage": 0.4889323712853125, "hit": true}, {"block_id": "src/0001", "dict_index": 1, "raw_len": 8192, "packed_len": 813, "coverage": 0.5619420325302679, "hit": true}, {"block_id": "src/0002", "dict_index": 1, "raw_len": 8192, "packed_len": 813, "coverage": 0.5619420325302679, "hit": true}, {"block_id": "src/0003", "dict_index": 1, "raw_len": 8192, "packed_len": 813, "coverage": 0.5619420325302679, "hit": true}, {"block_id": "src/0004", "dict_index": 1, "raw_len": 8192, "packed_len": 813, "coverage": 0.5619420325302679, "hit": true}, {"block_id": "src/0005", "dict_index": 1, "raw_len": 8192, "packed_len": 813, "coverage": 0.5619420325302679, "hit": true}, {"block_id": "src/0006", "dict_index": 1, "raw_len": 8192, "packed_len": 813, "coverage": 0.5619420325302679, "hit": true}, {"block_id": "src/0007", "dict_index": 1, "raw_len": 8192, "packed_len": 813, "coverage": 0.5619420325302679, "hit": true}, {"block_id": "src/0008", "dict_index": 1, "raw_len": 8192, "packed_len": 813, "coverage": 0.5619420325302679, "hit": true}, {"block_id": "src/0009", "dict_index": 1, "raw_len": 8192, "packed_len": 813, "coverage": 0.5619420325302679, "hit": true}, {"block_id": "src/0010", "dict_index": 1, "raw_len": 8192, "packed_len": 813, "coverage": 0.5619420325302679, "hit": true}, {"block_id": "src/0011", "dict_index": 1, "raw_len": 8192, "packed_len": 813, "coverage": 0.5619420325302679, "hit": true}, {"block_id": "src/0012", "dict_index": 1, "raw_len": 8192, "packed_len": 813, "coverage": 0.5619420325302679, "hit": true}, {"block_id": "src/0013", "dict_index": 1, "raw_len": 8192, "packed_len": 813, "coverage": 0.5619420325302679, "hit": true}, {"block_id": "src/0014", "dict_index": 1, "raw_len": 8192, "packed_len": 813, "coverage": 0.5619420325302679, "hit": true}, {"block_id": "src/0015", "dict_index": 1, "raw_len": 8192, "packed_len": 813, "coverage": 0.5619420325302679, "hit": true}, {"block_id": "src/0016", "dict_index": 1, "raw_len": 8192, "packed_len": 813, "coverage": 0.5619420325302679, "hit": true}, {"block_id": "src/0017", "dict_index": 1, "raw_len": 8192, "packed_len": 813, "coverage": 0.5619420325302679, "hit": true}, {"block_id": "src/0018", "dict_index": 1, "raw_len": 8192, "packed_len": 813, "coverage": 0.5619420325302679, "hit": true}, {"block_id": "src/0019", "dict_index": 1, "raw_len": 8192, "packed_len": 813, "coverage": 0.5619420325302679, "hit": true}, {"block_id": "src/0020", "dict_index": 1, "raw_len": 8192, "packed_len": 813, "coverage": 0.5619420325302679, "hit": true}, {"block_id": "json/0001", "dict_index": 2, "raw_len": 5120, "packed_len": 558, "coverage": 0.6854064642507346, "hit": true}, {"block_id": "json/0002", "dict_index": 2, "raw_len": 5120, "packed_len": 558, "coverage": 0.6854064642507346, "hit": true}, {"block_id": "json/0003", "dict_index": 2, "raw_len": 5120, "packed_len": 558, "coverage": 0.6854064642507346, "hit": true}, {"block_id": "json/0004", "dict_index": 2, "raw_len": 5120, "packed_len": 558, "coverage": 0.6854064642507346, "hit": true}, {"block_id": "json/0005", "dict_index": 2, "raw_len": 5120, "packed_len": 558, "coverage": 0.6854064642507346, "hit": true}, {"block_id": "json/0006", "dict_index": 2, "raw_len": 5120, "packed_len": 558, "coverage": 0.6854064642507346, "hit": true}, {"block_id": "json/0007", "dict_index": 2, "raw_len": 5120, "packed_len": 558, "coverage": 0.6854064642507346, "hit": true}, {"block_id": "json/0008", "dict_index": 2, "raw_len": 5120, "packed_len": 558, "coverage": 0.6854064642507346, "hit": true}, {"block_id": "json/0009", "dict_index": 2, "raw_len": 5120, "packed_len": 558, "coverage": 0.6854064642507346, "hit": true}, {"block_id": "json/0010", "dict_index": 2, "raw_len": 5120, "packed_len": 558, "coverage": 0.6854064642507346, "hit": true}, {"block_id": "json/0011", "dict_index": 2, "raw_len": 5120, "packed_len": 558, "coverage": 0.6854064642507346, "hit": true}, {"block_id": "json/0012", "dict_index": 2, "raw_len": 5120, "packed_len": 558, "coverage": 0.6854064642507346, "hit": true}, {"block_id": "mixed/0001", "dict_index": 3, "raw_len": 12288, "packed_len": 1948, "coverage": 0.30783019636600667, "hit": true}, {"block_id": "mixed/0002", "dict_index": 3, "raw_len": 12288, "packed_len": 1950, "coverage": 0.30799315570765096, "hit": true}, {"block_id": "mixed/0003", "dict_index": 3, "raw_len": 12288, "packed_len": 1949, "coverage": 0.30799315570765096, "hit": true}, {"block_id": "mixed/0004", "dict_index": 3, "raw_len": 12288, "packed_len": 1948, "coverage": 0.3079116760368288, "hit": true}, {"block_id": "mixed/0005", "dict_index": 3, "raw_len": 12288, "packed_len": 1945, "coverage": 0.30799315570765096, "hit": true}, {"block_id": "mixed/0006", "dict_index": 3, "raw_len": 12288, "packed_len": 1947, "coverage": 0.30783019636600667, "hit": true}, {"block_id": "mixed/0007", "dict_index": 3, "raw_len": 12288, "packed_len": 1947, "coverage": 0.3079116760368288, "hit": true}, {"block_id": "mixed/0008", "dict_index": 3, "raw_len": 12288, "packed_len": 1945, "coverage": 0.3079116760368288, "hit": true}, {"block_id": "drift/0001_prose_a", "dict_index": null, "raw_len": 8192, "packed_len": 1298, "coverage": 0.0, "hit": false}, {"block_id": "drift/0002_prose_b", "dict_index": null, "raw_len": 8192, "packed_len": 1295, "coverage": 0.0, "hit": false}, {"block_id": "drift/0003_csv_a", "dict_index": null, "raw_len": 8192, "packed_len": 2807, "coverage": 0.0, "hit": false}, {"block_id": "drift/0004_csv_b", "dict_index": null, "raw_len": 8192, "packed_len": 2805, "coverage": 0.0, "hit": false}, {"block_id": "drift/0005_b64_a", "dict_index": null, "raw_len": 8192, "packed_len": 6242, "coverage": 0.0, "hit": false}, {"block_id": "drift/0006_b64_b", "dict_index": null, "raw_len": 8192, "packed_len": 6241, "coverage": 0.0, "hit": false}, {"block_id": "size/0001_one_byte", "dict_index": 1, "raw_len": 1, "packed_len": 17, "coverage": 1.0, "hit": true}, {"block_id": "size/0002_fifteen_bytes", "dict_index": null, "raw_len": 15, "packed_len": 31, "coverage": 0.0, "hit": false}, {"block_id": "size/0003_sixteen_bytes", "dict_index": 0, "raw_len": 16, "packed_len": 18, "coverage": 1.0, "hit": true}, {"block_id": "size/0004_sixty_four_bytes", "dict_index": null, "raw_len": 64, "packed_len": 77, "coverage": 0.1836734693877551, "hit": false}, {"block_id": "size/0005_one_kib", "dict_index": 0, "raw_len": 1024, "packed_len": 221, "coverage": 0.4717542120911794, "hit": true}, {"block_id": "size/0006_long_128k", "dict_index": 0, "raw_len": 131072, "packed_len": 19944, "coverage": 0.4073418436252928, "hit": true}]}
+</script>
+<script type="module">
+const data = JSON.parse(document.getElementById("dictpool-data").textContent);
+const t = data.thresholds;
+const pct = (x) => (x * 100).toFixed(1) + "%";
+
+document.getElementById("meta").textContent =
+  `pool_id: ${data.pool_id} ｜ 批次数: ${data.batches.length} ｜ 块数: ${data.blocks.length}`;
+document.getElementById("gates").textContent =
+  `门槛：命中率 ≥ ${pct(t.hit_rate_min)} ｜ 压缩率 ≤ ${t.ratio_max.toFixed(2)} ` +
+  `｜ 字典 ≤ ${t.dict_max_bytes} B（覆盖门限 ${t.coverage_threshold}）`;
+
+const summaryBody = document.querySelector("#summary tbody");
+for (const b of data.batches) {
+  const tr = document.createElement("tr");
+  if (!b.ok) tr.className = "fail";
+  const cells = [
+    b.name, b.blocks, b.raw_bytes, b.packed_bytes,
+    pct(b.hit_rate), b.ratio.toFixed(3), b.dict_bytes,
+  ];
+  for (const c of cells) {
+    const td = document.createElement("td");
+    td.textContent = c;
+    tr.appendChild(td);
+  }
+  const verdict = document.createElement("td");
+  verdict.textContent = b.ok ? "达标" : "不达标";
+  verdict.className = b.ok ? "ok" : "bad";
+  tr.appendChild(verdict);
+  summaryBody.appendChild(tr);
+}
+
+const filter = document.getElementById("filter");
+const all = document.createElement("option");
+all.value = ""; all.textContent = "全部批次";
+filter.appendChild(all);
+for (const b of data.batches) {
+  const opt = document.createElement("option");
+  opt.value = b.name; opt.textContent = b.name;
+  filter.appendChild(opt);
+}
+
+const detailBody = document.querySelector("#detail tbody");
+function renderDetail(name) {
+  detailBody.textContent = "";
+  for (const blk of data.blocks) {
+    if (name && !blk.block_id.startsWith(name + "/")) continue;
+    const tr = document.createElement("tr");
+    const cells = [
+      blk.block_id, blk.raw_len,
+      blk.dict_index === null ? "—" : blk.dict_index,
+      blk.coverage.toFixed(4), blk.packed_len,
+      blk.hit ? "是" : "否",
+    ];
+    for (const c of cells) {
+      const td = document.createElement("td");
+      td.textContent = c;
+      tr.appendChild(td);
+    }
+    detailBody.appendChild(tr);
+  }
+}
+filter.addEventListener("change", () => renderDetail(filter.value));
+renderDetail("");
+</script>
+</body>
+</html>
